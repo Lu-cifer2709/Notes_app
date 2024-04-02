@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightOrange">
+
+    <ImageView
+        android:id="@+id/bgimg"
+        android:layout_width="412dp"
+        android:layout_height="488dp"
+        android:src="@drawable/ic_bg"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/txtIntroHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bgimg"
+        android:textSize="24sp"
+        android:textColor="@color/PrimaryOrange"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="35dp"
+        android:text="@string/create_and_design"
+        android:fontFamily="@font/century_gothic"/>
+
+    <TextView
+        android:id="@+id/txtIntroSubHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtIntroHeader"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryOrange"
+        android:layout_marginStart="35dp"
+        android:text="@string/your_notes_easily"
+        android:fontFamily="@font/century_gothic"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
